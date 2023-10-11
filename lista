@@ -1,0 +1,6 @@
+extraer(){ tar --create BotGen.sh comandos id listID reinicio ayuda costes invalido menu status back_ID donar kill_drop.sh myip update cache gerar_key link power -f bot.tar ; }
+descargar(){
+rw="raw.githubusercontent.com" && main="" && arch="bot.tar"
+wget --no-check-certificate https://${rw}/${main}/${arch}
+mkdir /etc/ADM-db/sources && mv bot.tar /etc/ADM-db/sources && cd /etc/ADM-db/sources && tar -xf bot.tar
+}
